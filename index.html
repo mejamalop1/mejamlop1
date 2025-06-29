@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyRider - Flying Car Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div id="start-screen" class="screen">
+            <h1>SkyRider</h1>
+            <p>Fly your car through the sky and avoid obstacles!</p>
+            <button id="start-btn">Aja gand marwane.></button>
+            <div class="controls">
+                <h3>Controls:</h3>
+                <p>Space/Up Arrow - Fly Up</p>
+                <p>Down Arrow - Fly Down</p>
+                <p>P - Pause Game</p>
+            </div>
+        </div>
+        
+        <div id="game-screen" class="screen hidden">
+            <canvas id="game-canvas"></canvas>
+            <div id="game-screen" class="screen hidden">
+                <canvas id="game-canvas"></canvas>
+                <div id="score-display">Score: 0</div>
+                <div id="pause-btn">Pause (P)</div>
+                
+                <!-- Add these mobile controls -->
+                <div id="mobile-controls">
+                    <button id="up-btn" class="control-btn">↑</button>
+                    <button id="down-btn" class="control-btn">↓</button>
+                </div>
+            </div>
+            <div id="score-display">Score: 0</div>
+            <div id="pause-btn">Pause (P)</div>
+        </div>
+        
+        <div id="game-over-screen" class="screen hidden">
+            <h1>tune marwadi !</h1>
+            <p id="final-score">Your score: 0</p>
+            <button id="restart-btn">Dobara marwayga?</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created by  Jamal ❤️ - Free to play!</p>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+</html>
